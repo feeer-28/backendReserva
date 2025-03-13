@@ -12,13 +12,10 @@ app.use("/api",reservaRouter);
 app.use(cors());
 
 app.get('/api/reservas', (req, res) => {
-  res.json({ message: '¡CORS habilitado!' });
-});
-app.get('/api/reservas', (req, res) => {
     try {
       res.json({ message: 'Datos de reserva' });
     } catch (error) {
-      res.status(500).json({ error: 'Error en el servidor' });
+      res.json({ error: 'Error en el servidor' });
     }
   });
   

@@ -1,12 +1,11 @@
-import ReservaApi from "./reserva"
+import Reservaapi from "./reserva"
 
 function App() {
   return (
     <div>
-      <ReservaApi />
+      <Reservaapi />
     </div>
   )
 }
- 
 
 export default App
